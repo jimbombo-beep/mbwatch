@@ -20,3 +20,6 @@ desktop and start it from there by double-clicking the icon.
 <b>RAM:</b>                min. 4 GB
 <b>Storage space:</b>      approx. 500 MB
 <b>Operating system:</b>   Linux (x64; tested under Linux Mint (Debian-based)) / Microsoft Windows 10
+
+<h2>Development</h2>
+In case your planning to change the code, you can refer to the javadoc <a href="https://github.com/jimbombo-beep/mbwatch/blob/main/doc/index.html">API documentation</a>.
