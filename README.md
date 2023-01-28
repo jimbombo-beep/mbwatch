@@ -2,7 +2,7 @@
 Clock with timer based on JavaFX.
 
 <h2>Installation:</h2>
-You can find releases for Linux (x64) and Windows 10 (x64) under <a href="https://github.com/jimbombo-beep/mbwatch/releases/tag/alpha">releases</a>.
+You can find releases for Linux (x64) and Windows 10 (x64) under <a href="https://github.com/jimbombo-beep/mbwatch/releases">releases</a>.
 
 Unzip or decompress the file into a folder of your choice.
 
