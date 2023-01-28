@@ -22,4 +22,4 @@ desktop and start it from there by double-clicking the icon.
 <b>Operating system:</b>   Linux (x64; tested under Linux Mint (Debian-based)) / Microsoft Windows 10
 
 <h2>Development</h2>
-In case your planning to change the code, you can refer to the javadoc <a href="https://github.com/jimbombo-beep/mbwatch/blob/main/doc/index.html">API documentation</a>.
+In case you are planning to change the code, you can refer to the javadoc <a href="https://github.com/jimbombo-beep/mbwatch/blob/main/doc/index.html">API documentation</a>.
