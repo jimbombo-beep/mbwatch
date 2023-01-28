@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane stylesheets="@default.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mbild.mbwatch.fx.FXSettings">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Date Format:" />
+            <Label text="Time Zone:" GridPane.rowIndex="2" />
+            <Label text="Show Date:" GridPane.rowIndex="3" />
+            <Label text="Numbering:" GridPane.rowIndex="4" />
+            <Label text="Clock Hand Color:" GridPane.rowIndex="5" />
+            <Label text="Timer Hand Color:" GridPane.rowIndex="6" />
+            <Label text="Alert Cycles:" GridPane.rowIndex="7" />
+            <TextField fx:id="txtDateFormat" GridPane.columnIndex="1" />
+            <ComboBox fx:id="cbTimeZone" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <CheckBox fx:id="chkShowDate" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cbNumbering" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ColorPicker fx:id="colorPClockHand" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ColorPicker fx:id="colorPTimerHand" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Spinner fx:id="spAlertCycles" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Time Format:" GridPane.rowIndex="1" />
+            <TextField fx:id="txtTimeFormat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="btnClose" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-close-window-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Close window." />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnApply" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-checkmark-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Apply settings." />
+               </tooltip>
+            </Button>
+        </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="pRoot" stylesheets="@default.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mbild.mbwatch.fx.FXDialogView">
+   <top>
+      <ToolBar fx:id="tbMain" nodeOrientation="RIGHT_TO_LEFT" styleClass="tool-bar-dialog" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="btnExit" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-close-window-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Close window." />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnMaximize" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-maximize-window-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Maximize window." />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnMinimize" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="13.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-minimize-window-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Minimize window." />
+               </tooltip>
+            </Button>
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>
