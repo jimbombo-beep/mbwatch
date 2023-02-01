@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane fx:id="pRoot" stylesheets="@default.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="org.mbild.mbwatch.fx.FXClockMainControl">
+   <center>
+      <BorderPane fx:id="pWatch" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <ToolBar fx:id="tbMain" orientation="VERTICAL" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="btnClock" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-wall-clock-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Show clock." />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnTimer" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-time-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Timer" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnConfig" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-settings-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Settings" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnInfo" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-information-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Information" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btnDigital" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-24%2000-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Digital clock" />
+               </tooltip>
+            </Button>
+        </items>
+      </ToolBar>
+   </right>
+</BorderPane>
